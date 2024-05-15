@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Run All cases">
+
+    <listeners>
+        <listener class-name="Helpers.ListenerConfig"/>
+    </listeners>
+    <test name="Run All Cases">
+        <parameter name="ReportName" value="Run All the Test classes from TestNg XML file"/>
+        <classes>
+            <class name="TestCases.GetAllUsers_TC"/>
+            <class name="TestCases.CreateNewUser_TC"/>
+            <class name="TestCases.UpdateExistingUser_TC"/>
+            <class name="TestCases.DeleteExistingUser_TC"/>
+        </classes>
+    </test>
+</suite>
